@@ -3,18 +3,24 @@
 #include"matrix_operation.h"
 using namespace std;
 
-//Заполнение матрицы А
-double** input_a(int& size) {
+//Выделение памяти для матрицы
+double** memory_allocation_matrix(int size) {
+	double** matrix = new double* [size];
+	for (int i = 0; i < size; i++)
+		matrix[i] = new double[size];
+	return matrix;
+}
+
+//Заполнение матрицы
+double** input(int& size) {
 	cout << "Enter the size of the matrix: ";
 	cin >> size;
 	cout << endl << "Enter the matrix: " << endl;
-	double** matrix_a = new double*[size];
-	for (int i = 0; i < size; i++)
-		matrix_a[i] = new double[size];
+	double** matrix = memory_allocation_matrix(size);
 	for (int i = 0; i < size; i++)
 		for (int j = 0; j < size; j++)
-			cin >> matrix_a[i][j];
-	return matrix_a;
+			cin >> matrix[i][j];
+	return matrix;
 }
 
 //Создание нулевой матрицы
@@ -107,7 +113,7 @@ void output(double** matrix, int size) {
 }
 
 //Освобождение памяти матрицы
-void free(double**& matrix, int size) {
+void free(double** matrix, int size) {
 	for (int i = 0; i < size; i++)
 		delete[] matrix[i];
 	delete[] matrix;
