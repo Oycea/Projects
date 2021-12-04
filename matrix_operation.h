@@ -1,15 +1,24 @@
 #ifndef _MATRIX_OPERATION_H_
 #define _MATRIX_OPERATION_H_
 
-double** input_a(int& size); //Заполнение матрицы А
-double** input_matrix(int size); //Заполнение вспомогательной матрицы В
-double** matrix_multiplication(double** matrix_1, double** matrix_2, double** matrix_res, int size); //Умножение матрицы на матрицу
-double** matrix_multiplication_by_number(int k, double** matrix, int size); //Умножение матрицы на число
-double** substraction_of_matrices(double** matrix_1, double** matrix_2, double** matrix_res, int size); //Разность двух матриц
-double** zero_matrix(double** matrix, int size); //Обнуление всех элементов матрицы
-double** polynominal_in_matrix(double** matrix_a, double** matrix_b, double** matrix_res, int size); //Многочлен от матрицы
-double** copy_elements(double** matrix_1, double** matrix_2, int size); //Копирование элементов из одной матрицы в другую
-void output(double** matrix, int size); //Вывод матрицы А
-void free(double**& matrix, int size); //Освобождение памяти матрицы
+double** input_a(int& size); //Г‡Г ГЇГ®Г«Г­ГҐГ­ГЁГҐ Г¬Г ГІГ°ГЁГ¶Г» ГЂ
+
+double** input_matrix(int size); //Р’РІРѕРґ РјР°С‚СЂРёС†С‹
+
+double** matrix_multiplication(double** matrix_1, double** matrix_2, double** matrix_res, int size); //Г“Г¬Г­Г®Г¦ГҐГ­ГЁГҐ Г¬Г ГІГ°ГЁГ¶Г» Г­Г  Г¬Г ГІГ°ГЁГ¶Гі
+
+double** matrix_multiplication_by_number(int k, double** matrix, int size); //РЈРјРЅРѕР¶РµРЅРёРµ РјР°С‚СЂРёС†С‹ РЅР° С‡РёСЃР»Рѕ
+
+double** substraction_of_matrices(double** matrix_1, double** matrix_2, double** matrix_res, int size); //ГђГ Г§Г­Г®Г±ГІГј Г¤ГўГіГµ Г¬Г ГІГ°ГЁГ¶
+
+double** zero_matrix(double** matrix, int size); //ГЋГЎГ­ГіГ«ГҐГ­ГЁГҐ ГўГ±ГҐГµ ГЅГ«ГҐГ¬ГҐГ­ГІГ®Гў Г¬Г ГІГ°ГЁГ¶Г»
+
+double** polynominal_in_matrix(double** matrix_a, double** matrix_b, double** matrix_res, int size); //РњРЅРѕРіРѕС‡Р»РµРЅ РѕС‚ РјР°С‚СЂРёС†С‹
+
+double** copy_elements(double** matrix_1, double** matrix_2, int size); //РљРѕРїРёСЂРѕРІР°РЅРёРµ СЌР»РµРјРµРЅС‚РѕРІ РёР· РѕРґРЅРѕР№ РјР°С‚СЂРёС†С‹ РІ РґСЂСѓРіСѓСЋ
+
+void output(double** matrix, int size); //Р’С‹РІРѕРґ РјР°С‚СЂРёС†С‹
+
+void free(double** matrix, int size); //РћС‡РёСЃС‚РєР° РїР°РјСЏС‚Рё РјР°С‚СЂРёС†С‹
 
 #endif //_MATRIX_OPERATION_H_
