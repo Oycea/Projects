@@ -62,6 +62,15 @@ double** substraction_of_matrices(double** matrix_1, double** matrix_2, double**
 	return matrix_res;
 }
 
+//Сумма двух матриц
+double** sum_of_matrices(double** matrix_1, double** matrix_2, int size) {
+	double** matrix_res = create_zero_matrix(size);
+	for (int i = 0; i < size; i++)
+		for (int j = 0; j < size; j++)
+			matrix_res[i][j] = matrix_1[i][j] + matrix_2[i][j];
+	return matrix_res;
+}
+
 //Обнуление всех элементов матрицы
 double** zero_matrix(double** matrix, int size) {
 	for (int i = 0; i < size; i++)

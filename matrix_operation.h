@@ -17,7 +17,10 @@ double** matrix_multiplication(double** matrix_1, double** matrix_2, double** ma
 double** matrix_multiplication_by_number(int k, double** matrix, int size); 
 
 //Разность двух матриц
-double** substraction_of_matrices(double** matrix_1, double** matrix_2, double** matrix_res, int size); 
+double** substraction_of_matrices(double** matrix_1, double** matrix_2, double** matrix_res, int size);
+
+//Сумма двух матриц
+double** sum_of_matrices(double** matrix_1, double** matrix_2, int size);
 
 //Обнуление всех элементов матрицы
 double** zero_matrix(double** matrix, int size); 
