@@ -11,7 +11,7 @@ using namespace std;
 
 int main() {
 	int size;
-	double** matrix_a = input_a(size); //Заполнение матрицы А
+	double** matrix_a = input(size); //Заполнение матрицы А
 	double** matrix_b = input_matrix(size); //Заполнение матрицы для вычислений
 	double** matrix_res = input_matrix(size); //Заполнение матрицы для вычислений
 

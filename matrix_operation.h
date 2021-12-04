@@ -7,7 +7,7 @@ double** memory_allocation_matrix(int size);
 //Заполнение матрицы
 double** input(int& size); 
 
-//Заполнение вспомогательной матрицы В
+//Заполнение вспомогательной матрицы
 double** input_matrix(int size); 
 
 //Умножение матрицы на матрицу
